@@ -1,0 +1,118 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+
+:root {
+  --card-width: 254px;
+}
+
+
+.wrapper {
+  background-color: #e5e5e5;
+  height: 100vh;
+  color: white;
+}
+
+.wrapper__card {
+  background-color: #242f39;
+  min-width: var(--card-width);
+  position: absolute;
+  left: calc(50% - (var(--card-width) / 2));
+  top: 16rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.top-bg {
+  background-color: #6595ec;
+  height: 250px;
+}
+
+/* ===== CARD ===== */
+
+/* Image */
+.card__img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.card__img-box img {
+  border-radius: 100px;
+  width: 125px;
+  border: 3px white solid;
+  margin: 2.8rem;
+}
+
+/* Box Headers */
+h1.img-container__name {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+h2.img-container__describe {
+  color: rgb(159 186 229);
+}
+
+.img-box__img-container {
+  position: relative;
+}
+
+/* Notification Dot*/
+.red-dot {
+  position: absolute;
+  top: 13rem;
+  left: 12rem;
+  background-color: #ff0100;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #242f39;
+}
+
+/* Social Info */
+.card__social-info {
+  display: flex;
+  background-color: #0d8bd9;
+}
+
+.card__social-info ul {
+  text-align: center;
+  flex-grow: 1;
+  padding: 1.6rem 1rem;
+}
+
+.card__social-info ul:hover{
+  background-color: #0D7EC5;
+}
+
+.social-info__text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: rgb(168, 206, 230);
+  margin-top: 0.5rem;
+}
+
+/* Follow Button */
+.card__btn-container {
+
+}
+
+.btn {
+  text-transform: uppercase;
+  border: #ffffff 2px solid;
+  text-align: center;
+  padding: 0.8rem 3rem;
+  margin: 2.8rem 0;
+}
+
+.social-info__number {
+  font-weight: 700;
+}
